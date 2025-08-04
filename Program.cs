@@ -1,6 +1,4 @@
-﻿using Tmds.DBus;
-
-namespace Tapper
+﻿namespace Tapper
 {
   class Program
   {
@@ -17,12 +15,9 @@ namespace Tapper
       }
 
       Console.WriteLine("Using sound: " + soundPath);
+
       var engine = new TapperEngine(soundPath);
-
-      var connection = new Connection(Address.Session);
-      await connection.ConnectAsync();
-
-      await connection.RegisterObjectAsync(engine);
+      await engine.StartAsync();
 
       Console.WriteLine("TapperEngine is running. Press Ctrl+C to exit.");
       await Task.Delay(-1);

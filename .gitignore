@@ -1,3 +1,34 @@
-.editorconfig
+# Build & runtime
 bin/
 obj/
+build/
+
+# Dotnet user secrets & VS settings (if using)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Packages
+*.nupkg
+*.snupkg
+
+# Logs
+*.log
+
+# Release tarballs / RPMs
+*.tar.gz
+*.rpm
+
+# VSCode settings (optional)
+.vscode/
+
+# Rider / JetBrains
+.idea/
+
+# Runtime files
+*.pid
+*.pid.lock
+
+# Keep packaging folder!
+!/packaging/

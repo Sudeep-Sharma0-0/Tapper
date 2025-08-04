@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Tmds.DBus/0.21.2": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Tmds.DBus.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Tmds.DBus.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "YamlDotNet/16.3.0": {
         "type": "package",
         "compile": {
@@ -31,21 +18,6 @@
     }
   },
   "libraries": {
-    "Tmds.DBus/0.21.2": {
-      "sha512": "KejVYde7VYeWsAj4aaELthlJyVzsbvG4rmHgaXuyPmv8QuN4SLYotKGYtYqWRG+zj9c24/VCYq+V67SRgasDYQ==",
-      "type": "package",
-      "path": "tmds.dbus/0.21.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Tmds.DBus.dll",
-        "lib/net6.0/Tmds.DBus.xml",
-        "lib/netstandard2.0/Tmds.DBus.dll",
-        "lib/netstandard2.0/Tmds.DBus.xml",
-        "tmds.dbus.0.21.2.nupkg.sha512",
-        "tmds.dbus.nuspec"
-      ]
-    },
     "YamlDotNet/16.3.0": {
       "sha512": "SgMOdxbz8X65z8hraIs6hOEdnkH6hESTAIUa7viEngHOYaH+6q5XJmwr1+yb9vJpNQ19hCQY69xbFsLtXpobQA==",
       "type": "package",
@@ -72,7 +44,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Tmds.DBus >= 0.21.2",
       "YamlDotNet >= 16.3.0"
     ]
   },
@@ -82,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/@home/sudip/Documents/Tapper/Tapper.csproj",
+      "projectUniqueName": "/home/sudip/Documents/Tapper/Tapper.csproj",
       "projectName": "Tapper",
-      "projectPath": "/@home/sudip/Documents/Tapper/Tapper.csproj",
+      "projectPath": "/home/sudip/Documents/Tapper/Tapper.csproj",
       "packagesPath": "/home/sudip/.nuget/packages/",
-      "outputPath": "/@home/sudip/Documents/Tapper/obj/",
+      "outputPath": "/home/sudip/Documents/Tapper/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sudip/.nuget/NuGet/NuGet.Config"
@@ -120,10 +91,6 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "Tmds.DBus": {
-            "target": "Package",
-            "version": "[0.21.2, )"
-          },
           "YamlDotNet": {
             "target": "Package",
             "version": "[16.3.0, )"

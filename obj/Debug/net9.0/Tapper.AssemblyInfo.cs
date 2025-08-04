@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6860e8a8654993c28f14670839d4e6251efd181b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

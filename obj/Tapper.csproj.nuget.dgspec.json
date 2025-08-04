@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/@home/sudip/Documents/Tapper/Tapper.csproj": {}
+    "/home/sudip/Documents/Tapper/Tapper.csproj": {}
   },
   "projects": {
-    "/@home/sudip/Documents/Tapper/Tapper.csproj": {
+    "/home/sudip/Documents/Tapper/Tapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/@home/sudip/Documents/Tapper/Tapper.csproj",
+        "projectUniqueName": "/home/sudip/Documents/Tapper/Tapper.csproj",
         "projectName": "Tapper",
-        "projectPath": "/@home/sudip/Documents/Tapper/Tapper.csproj",
+        "projectPath": "/home/sudip/Documents/Tapper/Tapper.csproj",
         "packagesPath": "/home/sudip/.nuget/packages/",
-        "outputPath": "/@home/sudip/Documents/Tapper/obj/",
+        "outputPath": "/home/sudip/Documents/Tapper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/sudip/.nuget/NuGet/NuGet.Config"
@@ -45,10 +45,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Tmds.DBus": {
-              "target": "Package",
-              "version": "[0.21.2, )"
-            },
             "YamlDotNet": {
               "target": "Package",
               "version": "[16.3.0, )"
