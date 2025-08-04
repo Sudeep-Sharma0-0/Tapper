@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tmds.DBus" Version="0.21.2" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+  </ItemGroup>
+
+  <!-- Custom target: copy IBus engine xml after build -->
+  <PropertyGroup>
+    <!-- Use home if defined, fallback to project directory -->
+    <HOME Condition=" '$(HOME)' == '' ">$(MSBuildThisFileDirectory)</HOME>
+    <IbusEngineXml>$(MSBuildProjectDirectory)/tapper.xml</IbusEngineXml>
+    <IbusComponentDir>$(HOME)/.local/share/ibus/component</IbusComponentDir>
+  </PropertyGroup>
+
+  <Target Name="CopyIbusEngineXml" AfterTargets="Build">
+    <MakeDir Directories="$(IbusComponentDir)" Condition="!Exists('$(IbusComponentDir)')" />
+    <Copy SourceFiles="$(IbusEngineXml)" DestinationFolder="$(IbusComponentDir)" SkipUnchangedFiles="true" />
+    <Message Text="Copied tapper.xml to $(IbusComponentDir)" Importance="high" />
+  </Target>
+
+</Project>

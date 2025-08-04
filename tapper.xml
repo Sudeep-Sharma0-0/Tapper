@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+  <engine>
+    <name>tapper</name>
+    <longname>Tapper Key Sound Engine</longname>
+    <description>Plays a sound on key press</description>
+    <author>Somnath Poudel</author>
+    <license>GPLv3</license>
+    <language>en</language>
+    <layout>us</layout>
+    <icon></icon>
+
+    <exec>/home/sudip/Documents/Tapper/bin/Debug/net9.0/Tapper</exec>
+
+    <dbus-name>org.freedesktop.IBus.Engine.Tapper</dbus-name>
+    <object-path>/org/freedesktop/IBus/Engine/KeySound</object-path>
+    <class>org.freedesktop.IBus.Engine</class>
+  </engine>
+</component>
