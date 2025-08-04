@@ -4,10 +4,11 @@ Release:        1%{?dist}
 Summary:        A simple app to play sound every time you press a key on your keyboard
 
 License:        GPLv3+
-URL:            https://example.com/Tapper
-Source0:        Tapper-0.0.1.tar.gz
+URL:            https://github.com/yourusername/Tapper
+Source0:        https://github.com/yourusername/Tapper/releases/download/v%{version}/Tapper-%{version}.tar.gz
 
-BuildArch:      noarch
+%global debug_package %{nil}
+#BuildArch:      noarch
 
 %description
 This app detects the keyboard being used and every time a key is pressed,
@@ -34,7 +35,13 @@ Type=simple
 WorkingDirectory=/opt/Tapper
 ExecStart=/opt/Tapper/Tapper
 Restart=always
-User=nobody
+RestartSec=5
+User=sudip
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+Environment=PULSE_RUNTIME_PATH=/run/user/1000/pulse/
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
